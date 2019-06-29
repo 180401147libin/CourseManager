@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using CourseManager.Models;
 
-namespace CourseManager.Migrations.Seeds
+namespace CourseManager.Models
 {
     public class SideBarCreator
     {

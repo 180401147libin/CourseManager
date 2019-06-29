@@ -1,6 +1,7 @@
 namespace CourseManager.Migrations
 {
     using CourseManager.Migrations.Seeds;
+    using CourseManager.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;

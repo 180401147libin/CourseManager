@@ -13,10 +13,12 @@ namespace CourseManager.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     
-    public partial class Course
+    public partial class SideBars
     {
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Controller { get; set; }
+        public string Action { get; set; }
     }
 }

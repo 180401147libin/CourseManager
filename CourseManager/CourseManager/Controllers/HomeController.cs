@@ -11,6 +11,7 @@ namespace CourseManager.Controllers
     [ActionResultExceptionFilter]
     public class HomeController : Controller
     {
+        private CourseManagerEntities db = new CourseManagerEntities();
         public ActionResult Index()
         {
             return View();
@@ -36,5 +37,13 @@ namespace CourseManager.Controllers
             ViewBag.Site = site;
             return PartialView("~/Views/Shared/Navbar.cshtml");
         }
+        [ChildActionOnly]
+        public ActionResult Sidebar()
+        {
+            var sidebars = db.SideBars.ToList();
+            ViewBag.SideBars = sidebars;
+            return PartialView("~/Views/Shared/SideBar.cshtml");
+        }
+
     }
 }

@@ -3,7 +3,7 @@ namespace CourseManager.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class sasjdoas : DbMigration
+    public partial class _25 : DbMigration
     {
         public override void Up()
         {
@@ -72,9 +72,9 @@ namespace CourseManager.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(nullable: false, maxLength: 20),
-                        Controller = c.String(nullable: false, maxLength: 20),
-                        Action = c.String(nullable: false, maxLength: 20),
+                        Name = c.String(),
+                        Controller = c.String(),
+                        Action = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -83,9 +83,9 @@ namespace CourseManager.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(nullable: false, maxLength: 20),
-                        Controller = c.String(nullable: false, maxLength: 20),
-                        Action = c.String(nullable: false, maxLength: 20),
+                        Name = c.String(),
+                        Controller = c.String(),
+                        Action = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

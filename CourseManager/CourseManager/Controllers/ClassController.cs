@@ -49,7 +49,6 @@ namespace CourseManager.Controllers
         // POST: /Class/Create
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Name,TeacherId")] Classes classes)
         {
             if (ModelState.IsValid)
@@ -116,6 +115,7 @@ namespace CourseManager.Controllers
         // POST: /Class/Delete/5
 
         [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             Classes classes = db.Classes.Find(id);
@@ -131,7 +131,10 @@ namespace CourseManager.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            if (disposing)
+            {
+                db.Dispose();
+            }
             base.Dispose(disposing);
         }
     }

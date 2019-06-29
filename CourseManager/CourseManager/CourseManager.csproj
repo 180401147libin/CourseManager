@@ -169,6 +169,7 @@
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\CourseManagementsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SidebarController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Filters\ActionResultExceptionFilterAttribute.cs" />
@@ -178,20 +179,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906300117576_sasjdoas.cs" />
-    <Compile Include="Migrations\201906300117576_sasjdoas.Designer.cs">
-      <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912200732078_1802.cs" />
-    <Compile Include="Migrations\201912200732078_1802.Designer.cs">
-      <DependentUpon>201912200732078_1802.cs</DependentUpon>
+    <Compile Include="Migrations\201906290809102_25.cs" />
+    <Compile Include="Migrations\201906290809102_25.Designer.cs">
+      <DependentUpon>201906290809102_25.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Seeds\ActionLinkCreator.cs" />
     <Compile Include="Migrations\Seeds\SideBarCreator.cs" />
-    <Compile Include="Migrations\Seeds\SideBars.cs" />
     <Compile Include="Migrations\UserCreator.cs" />
-    <Compile Include="Models\ActionLinks.cs" />
+    <Compile Include="Models\ActionLinks.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Models\Classes.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -215,13 +213,21 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Include="Models\Courses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\SideBars.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Models\Students.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\Teachers.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\Users.cs" />
+    <Compile Include="Models\Users.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Models\VaildatableObjects\LoginInput.cs" />
     <Compile Include="Models\WebsiteInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -367,6 +373,12 @@
     <Content Include="Views\Home\View2.cshtml" />
     <Content Include="Views\Shared\Navbar.cshtml" />
     <Content Include="Views\Class\ShowCourseManagement.cshtml" />
+    <Content Include="Views\Sidebar\Index.cshtml" />
+    <Content Include="Views\Sidebar\Details.cshtml" />
+    <Content Include="Views\Sidebar\Create.cshtml" />
+    <Content Include="Views\Sidebar\Edit.cshtml" />
+    <Content Include="Views\Sidebar\Delete.cshtml" />
+    <Content Include="Views\Shared\SideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -380,11 +392,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906300117576_sasjdoas.resx">
-      <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912200732078_1802.resx">
-      <DependentUpon>201912200732078_1802.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906290809102_25.resx">
+      <DependentUpon>201906290809102_25.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

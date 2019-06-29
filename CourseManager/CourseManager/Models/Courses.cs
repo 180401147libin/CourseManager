@@ -13,7 +13,7 @@ namespace CourseManager.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     
-    public partial class Course
+    public partial class Courses
     {
         [Key]
         public int Id { get; set; }

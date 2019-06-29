@@ -8,6 +8,7 @@ namespace CourseManager.Models
 {
     public class Users
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]

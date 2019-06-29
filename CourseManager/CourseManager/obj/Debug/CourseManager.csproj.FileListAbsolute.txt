@@ -126,8 +126,7 @@ D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\System.Web.WebPages
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\WebMatrix.Data.resources.dll
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\WebMatrix.WebData.resources.dll
-D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.Migrations.sasjdoas.resources
-D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.csproj.GenerateResource.Cache
 D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.dll
 D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.pdb
-D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.csprojResolveAssemblyReference.cache
+D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.Migrations._25.resources
+D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.csproj.GenerateResource.Cache
