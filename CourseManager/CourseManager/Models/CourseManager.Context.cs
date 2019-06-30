@@ -9,6 +9,7 @@
 
 namespace CourseManager.Models
 {
+    using CourseManager.Migrations.Seeds;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;

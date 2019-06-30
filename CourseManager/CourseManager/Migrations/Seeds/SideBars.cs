@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CourseManager.Migrations.Seeds
 {
-    class SideBars
+    public class SideBars
     {
         public int Id { get; set; }
 

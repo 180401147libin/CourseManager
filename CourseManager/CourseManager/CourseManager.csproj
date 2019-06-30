@@ -164,6 +164,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActioResult.cs" />
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\CourseManagementsController.cs" />
@@ -177,25 +178,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911270915508_Create20191127.cs" />
-    <Compile Include="Migrations\201911270915508_Create20191127.Designer.cs">
-      <DependentUpon>201911270915508_Create20191127.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912040051296_Updata20191112451.cs" />
-    <Compile Include="Migrations\201912040051296_Updata20191112451.Designer.cs">
-      <DependentUpon>201912040051296_Updata20191112451.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912040055534_Update201911121451.cs" />
-    <Compile Include="Migrations\201912040055534_Update201911121451.Designer.cs">
-      <DependentUpon>201912040055534_Update201911121451.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912040153267_201911111204.cs" />
-    <Compile Include="Migrations\201912040153267_201911111204.Designer.cs">
-      <DependentUpon>201912040153267_201911111204.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912130716539_lb.cs" />
-    <Compile Include="Migrations\201912130716539_lb.Designer.cs">
-      <DependentUpon>201912130716539_lb.cs</DependentUpon>
+    <Compile Include="Migrations\201906300117576_sasjdoas.cs" />
+    <Compile Include="Migrations\201906300117576_sasjdoas.Designer.cs">
+      <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Seeds\ActionLinkCreator.cs" />
@@ -235,7 +220,6 @@
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\VaildatableObjects\LoginInput.cs" />
     <Compile Include="Models\WebsiteInfo.cs" />
-    <Compile Include="Models\Websitelnfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -377,6 +361,7 @@
     <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Home\View1.cshtml" />
     <Content Include="Views\Home\View2.cshtml" />
+    <Content Include="Views\Shared\Navbar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -389,20 +374,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911270915508_Create20191127.resx">
-      <DependentUpon>201911270915508_Create20191127.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912040051296_Updata20191112451.resx">
-      <DependentUpon>201912040051296_Updata20191112451.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912040055534_Update201911121451.resx">
-      <DependentUpon>201912040055534_Update201911121451.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912040153267_201911111204.resx">
-      <DependentUpon>201912040153267_201911111204.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912130716539_lb.resx">
-      <DependentUpon>201912130716539_lb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906300117576_sasjdoas.resx">
+      <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
