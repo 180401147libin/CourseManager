@@ -170,8 +170,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
+    <Compile Include="Filters\ActionResultExceptionFilterAttribute.cs" />
     <Compile Include="Filters\IauthotizationFilter.cs" />
     <Compile Include="Filters\RequireAuthenticationAttribute.cs" />
+    <Compile Include="Filters\UnauthorizedException.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -191,8 +193,16 @@
     <Compile Include="Migrations\201912040153267_201911111204.Designer.cs">
       <DependentUpon>201912040153267_201911111204.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912130716539_lb.cs" />
+    <Compile Include="Migrations\201912130716539_lb.Designer.cs">
+      <DependentUpon>201912130716539_lb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Seeds\ActionLinkCreator.cs" />
+    <Compile Include="Migrations\Seeds\SideBarCreator.cs" />
+    <Compile Include="Migrations\Seeds\SideBars.cs" />
     <Compile Include="Migrations\UserCreator.cs" />
+    <Compile Include="Models\ActionLinks.cs" />
     <Compile Include="Models\Classes.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -390,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912040153267_201911111204.resx">
       <DependentUpon>201912040153267_201911111204.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912130716539_lb.resx">
+      <DependentUpon>201912130716539_lb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -4,10 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CourseManager.Models;
+using CourseManager.Filters;
 namespace CourseManager.Controllers
 {
+    [RequireAuthentication]
+    [ActionResultExceptionFilter]
     public class HomeController : Controller
     {
+        private CourseManagerEntities db = new CourseManagerEntities();
+
         public ActionResult Index()
         {
             var siteInfo = new WebsiteInfo("Demo","RIGHT");
