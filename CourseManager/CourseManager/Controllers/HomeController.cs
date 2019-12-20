@@ -34,7 +34,7 @@ namespace CourseManager.Controllers
         {
             var site = new WebsiteInfo();
             ViewBag.Site = site;
-            return PartialView("~/Views/Shared/Navbar.cshtm");
+            return PartialView("~/Views/Shared/Navbar.cshtml");
         }
     }
 }

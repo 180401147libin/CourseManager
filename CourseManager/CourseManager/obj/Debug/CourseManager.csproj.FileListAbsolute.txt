@@ -66,8 +66,6 @@ D:\安装包\CourseManager\CourseManager\CourseManager\obj\Debug\CourseManager.M
 D:\安装包\CourseManager\CourseManager\CourseManager\obj\Debug\CourseManager.Migrations.Update201911121451.resources
 D:\安装包\CourseManager\CourseManager\CourseManager\obj\Debug\CourseManager.Migrations._201911111204.resources
 D:\安装包\CourseManager\CourseManager\CourseManager\obj\Debug\CourseManager.csprojResolveAssemblyReference.cache
-D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.dll
-D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.pdb
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\CourseManager.dll
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\CourseManager.pdb
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\Antlr3.Runtime.dll
@@ -130,4 +128,6 @@ D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\Microsoft.Web.WebPa
 D:\lb\CourseManager1\CourseManager\CourseManager\bin\zh-Hans\WebMatrix.WebData.resources.dll
 D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.Migrations.sasjdoas.resources
 D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.csproj.GenerateResource.Cache
+D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.dll
+D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.pdb
 D:\lb\CourseManager1\CourseManager\CourseManager\obj\Debug\CourseManager.csprojResolveAssemblyReference.cache

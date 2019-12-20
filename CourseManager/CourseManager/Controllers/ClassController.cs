@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CourseManager.Models;
+using System.Net;
 
 namespace CourseManager.Controllers
 {
@@ -24,13 +25,13 @@ namespace CourseManager.Controllers
         //
         // GET: /Class/Details/5
 
-        public ActionResult Details(int id = 0)
+        public ActionResult Details(int? id)
         {
-            Classes classes = db.Classes.Find(id);
-            if (classes == null)
+            if (id == null)
             {
-                return HttpNotFound();
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            Classes classes = db.Classes.Find(id);
             return View(classes);
         }
 
@@ -48,7 +49,8 @@ namespace CourseManager.Controllers
         // POST: /Class/Create
 
         [HttpPost]
-        public ActionResult Create(Classes classes)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Id,Name,TeacherId")] Classes classes)
         {
             if (ModelState.IsValid)
             {
@@ -63,16 +65,19 @@ namespace CourseManager.Controllers
         //
         // GET: /Class/Edit/5
 
-        public ActionResult Edit(int id = 0)
+        public ActionResult Edit(int? id )
         {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var teachers = db.Teachers.ToList();
+            ViewBag.Teachers = teachers;
             Classes classes = db.Classes.Find(id);
             if (classes == null)
             {
                 return HttpNotFound();
             }
-            var teachers = db.Teachers.ToList();
-            ViewBag.Teachers = teachers;
-
             return View(classes);
         }
 
@@ -80,6 +85,7 @@ namespace CourseManager.Controllers
         // POST: /Class/Edit/5
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Edit(Classes classes)
         {
             if (ModelState.IsValid)
@@ -116,6 +122,11 @@ namespace CourseManager.Controllers
             db.Classes.Remove(classes);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult ShowCourseManagement(int id)
+        {
+            return View();
         }
 
         protected override void Dispose(bool disposing)

@@ -182,6 +182,10 @@
     <Compile Include="Migrations\201906300117576_sasjdoas.Designer.cs">
       <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912200732078_1802.cs" />
+    <Compile Include="Migrations\201912200732078_1802.Designer.cs">
+      <DependentUpon>201912200732078_1802.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Seeds\ActionLinkCreator.cs" />
     <Compile Include="Migrations\Seeds\SideBarCreator.cs" />
@@ -362,10 +366,12 @@
     <Content Include="Views\Home\View1.cshtml" />
     <Content Include="Views\Home\View2.cshtml" />
     <Content Include="Views\Shared\Navbar.cshtml" />
+    <Content Include="Views\Class\ShowCourseManagement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="NewFolder1\" />
+    <Folder Include="Views\ActionLink\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -376,6 +382,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906300117576_sasjdoas.resx">
       <DependentUpon>201906300117576_sasjdoas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912200732078_1802.resx">
+      <DependentUpon>201912200732078_1802.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
